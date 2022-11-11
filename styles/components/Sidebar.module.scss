@@ -1,0 +1,198 @@
+.panel_sidebar_div {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    z-index: 99;
+    background-color: var(--whitecolor);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+    padding-bottom: 20px;
+  }
+  .logo_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+  .logo_div a {
+    display: flex;
+    align-items: center;
+  }
+  .logo_text {
+    color: var(--primarycolor);
+    font-family: var(--heading-font-family);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+  .logo_img img {
+    max-width: 52px;
+  }
+  .logo_text span {
+    color: var(--graycolor);
+  }
+  .logo_img {
+    display: flex;
+    align-items: center;
+  }
+  .bar_icon span {
+    color: var(--graycolor);
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .logo_div .bar_icon {
+    margin-left: 10px;
+  }
+  .togglebar {
+    color: var(--primarycolor);
+  }
+  .sidemenu_div {
+    margin-top: 20px;
+  }
+  .sidemenu_div a {
+    text-decoration: none;
+  }
+  
+  .menu_box_div {
+    display: flex;
+    border-radius: var(--border-radius-5);
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+  }
+  .menu_box_div label {
+    width: 24px;
+    margin-bottom: 0px;
+    margin-right: 15px;
+    line-height: 15px;
+  }
+  .menu_box_div label span {
+    color: var(--graycolor);
+    font-size: 24px;
+  }
+  .menu_box_div p {
+    color: var(--graycolor);
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .togglebar {
+    display: none !important;
+  }
+  .sidebar_user_details_div {
+    text-align: center;
+  }
+  .user_img_div img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px rgb(177 67 67 / 24%);
+  }
+  .user_name_text {
+    color: var(--primarycolor);
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .user_desc_text {
+    color: var(--graycolor);
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  /* === SCROLLBAR CSS START === */
+  .sidemenu_div {
+    height: calc(100vh - 320px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 20px 20px 0px 20px;
+  }
+  .sidemenu_div a:last-child .menu_box_div {
+    margin-bottom: 0px;
+  }
+  .sidemenu_div::-webkit-scrollbar {
+    width: 5px;
+  }
+  .sidemenu_div::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--Secondarycolor);
+    border-radius: var(--border-radius-5);
+  }
+  .sidemenu_div::-webkit-scrollbar-thumb {
+    background: var(--graycolor);
+    border-radius: var(--border-radius-5);
+  }
+  /* === SCROLLBAR CSS END === */
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .panel_sidebar_div {
+        padding: 0px 0px;
+        border-right: 0px;
+   }
+    .panel_sidebar_div {
+        width: 280px;
+   }
+    .menu_box_div p {
+        font-size: 14px;
+   }
+    .menu_box_div label {
+        width: 20px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+   }
+    .togglebar {
+        display: block !important;
+   }
+    .menu_box_div p {
+        font-size: 14px;
+   }
+    .menu_box_div label {
+        width: 20px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+   }
+    .menu_box_div {
+        margin-bottom: 10px;
+   }
+    .sidemenu_div {
+        margin-top: 20px;
+   }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .panel_sidebar_div {
+        width: 300px;
+   }
+    .bar_icon {
+        display: none !important;
+   }
+    .togglebar {
+        display: block !important;
+   }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .menu_box_div p {
+        font-size: 14px;
+   }
+    .menu_box_div label {
+        width: 24px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+   }
+    .panel_sidebar_div {
+        width: 240px;
+   }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .menu_box_div p {
+        font-size: 14px;
+   }
+    .menu_box_div label {
+        width: 24px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+   }
+    .panel_sidebar_div {
+        width: 240px;
+   }
+  }
